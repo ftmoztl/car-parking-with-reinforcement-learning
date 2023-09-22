@@ -33,7 +33,6 @@ The simulation environments were developed to create this restricted environment
 
 
 # Environment
-Q-learning is a type of reinforcement learning algorithm that is used to learn the optimal action-value function for an agent in an environment. It is based on the idea that the agent should select actions that will lead to the highest expected long-term reward.
 All development processes are done in a Python environment. The environment Python script and field classes are created to constitute environments for the agent and learning process. And also for visualization of the agent movement, the ‘pillow’ Python package was used.
 
 To install the dependencies to run the notebook, you can use Anaconda. Once you have installed Anaconda, run:
