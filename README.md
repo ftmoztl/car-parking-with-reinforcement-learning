@@ -38,8 +38,6 @@ All development processes are done in a Python environment. The environment Pyth
 To install the dependencies to run the notebook, you can use Anaconda. Once you have installed Anaconda, run:
 
 `$ conda env create -f environment.yml`
-
-
 # Proposed Resources
 
 
