@@ -10,6 +10,7 @@ Existing solutions to this problem rely on technologies like smart cameras and s
 You can find this problem in this [Operation Research][book]* book, in the Probabilistic Dynamic Programming section. So, the problem is tried to solve by various methods and applications. You can find the problem definition placed in the book below. You can find the demo of probabilistic dynamic programming approach for this study in the [‘probabilistic-dp.ipynb’][prob] Jupyter Notebook.
 
 
+
 <img src='Visuals/Problem-Definition.png' width='500'>
 
 **Winston, Wayne L. Operations research: applications and algorithms. Cengage Learning, 2022.*
