@@ -9,14 +9,12 @@ Existing solutions to this problem rely on technologies like smart cameras and s
 
 You can find this problem in this [Operation Research][book]* book, in the Probabilistic Dynamic Programming section. So, the problem is tried to solve by various methods and applications. You can find the problem definition placed in the book below. You can find the demo of probabilistic dynamic programming approach for this study in the [‘probabilistic-dp.ipynb’][prob] Jupyter Notebook.
 
-
 <img src='Visuals/Problem-Definition.png' width='500'>
 
 **Winston, Wayne L. Operations research: applications and algorithms. Cengage Learning, 2022.*
 
 [book]: https://www.academia.edu/48990438/Operational_Research_Winston_Wayne
 [prob]: https://github.com/ftmoztl/car-parking-with-reinforcement-learning/blob/main/Codes/probabilistic-dp.ipynb
-
 
 # Methods & Algorithms
 In this approach, in the car parking problem, the agent (our actor) would take actions (park or move forward to find a more close parking slot) and receive rewards (e.g., parking done in a short time and closest area to the target) from the user. The nature of this problem is interactive, sequential, and agent-based. Because the agents want to go to the same place each day and make a decision as to what to do. Actually, this problem is placed in the ‘Operation Research’ book written by Wayne L. Winston [2]. The probabilistic dynamic programming proposed to solve this problem is in this book. But, the dynamic programming approach is efficient when the number of states and actions is manageable. On the other hand, Q-learning is more flexible and can handle larger state spaces and unknown transition probabilities. It is suitable when the state space is large or continuous, and the transition probabilities are unknown or difficult to model. If the real locations and target places are considered, there will be a huge amount of state space with the coordinates of the agents, and places. So, Q-learning was decided to use. The agent can then update its Q-values based on the rewards received, using the Q-Learning update rule. The important features of the Q-learning, especially for this problem;
