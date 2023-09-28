@@ -41,6 +41,7 @@ The simulation environments were developed to create this restricted environment
 
 
 # Visualization
+The agent movements are visualized by using the ‘pillow’ package of Python. It’s adapted to the 20x20 field. A function is created to visualize roads, agents, parking lots, and target places. You can find in the visualization-traffic.ipynb notebook.
 
 
 # Additional Studies
