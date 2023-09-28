@@ -43,6 +43,8 @@ The simulation environments were developed to create this restricted environment
 # Visualization
 The agent movements are visualized by using the ‘pillow’ package of Python. It’s adapted to the 20x20 field. A function is created to visualize roads, agents, parking lots, and target places. You can find in the visualization-traffic.ipynb notebook.
 
+# Flexible Environment
+For real cases, of course, there will not be a fixed-size field for the agent. To play with the environment, target, and other constants, a flexible environment are designed. In this flexible environment, agents can learn and be tested for the field with high size. And The ‘learning-flexible-env.py’ also includes the random solution to see how Q-learning is working effectively and the random solution is very slow.
 
 # Additional Studies
 
