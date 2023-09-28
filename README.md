@@ -38,7 +38,12 @@ The simulation environments were developed to create this restricted environment
 
 
 # Hyperparameter Tuning 
+The Field_4 environment is used throughout the hyperparameter tuning process. So, the focus of this section is tuning the hyper parameters. The alpha and gamma values are tuning to reach high performances. These metrics should be considered;
+* Minimum of average number of steps to reach the target,
+* Maximum of average total rewards,
+* High percentage of reaching the target parking place
 
+You can run 'hyperparam-tuning.py' notebook to tune alpha and gamma values. And you can check which values give the best results.
 
 # Visualization
 The agent movements are visualized by using the ‘pillow’ package of Python. It’s adapted to the 20x20 field. A function is created to visualize roads, agents, parking lots, and target places. You can find in the visualization-traffic.ipynb notebook.
