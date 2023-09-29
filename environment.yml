@@ -9,8 +9,9 @@ dependencies:
 - numpy=1.24.2
 - seaborn=0.12.2
 - matplotlib=3.4.3
-- wandb=0.15.9
 - math
 - plotly
 - sklearn
-- torch
+- random
+- itertools
+- PIL
