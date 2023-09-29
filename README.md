@@ -20,12 +20,13 @@ In this approach, in the car parking problem, the agent (our actor) would take a
 * Q-learning employs value iteration to iteratively update the Q-values, which represent the expected rewards for taking specific actions in specific states. Q represents quality. So the agent will learn quickly and consciously by updating the Q table with mote qualified results of the action.
 
 # Learning Environment Creation
-The actors of the environment of learning are below;
-➔ Agent: Car or car driver,
-➔ Actions: 5 actions are available, turn left, turn right, go up and down, park,
-➔ States: Location of the agent with parked or not parked,
-➔ Environment: The focus area includes the target place, and it will include restrictions that can be on the road (lines that indicate the out of road, traffics, etc.) 
-➔ Reward: Regular movement rewards with constants and parking rewards with closeness to the target.
+The actors of the environment of learning are below; 
+* Agent: Car or car driver, 
+* Actions: 5 actions are available, turn left, turn right, go up and down, park, 
+* States: Location of the agent with parked or not parked, 
+* Environment: The focus area includes the target place, and it will include restrictions that can be on the road (lines that indicate the out of road, traffics, etc.)
+* Reward: Regular movement rewards with constants and parking rewards with closeness to the target. 
+
 The simulation environments are developed to create this restricted environment with these factors. It is assumed that each resource, each driver, and each destination has a known location associated with it in a 2–dimensional Euclidean space as indicated in this study.
 
 ## Reward Policy
