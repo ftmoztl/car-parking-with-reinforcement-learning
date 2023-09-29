@@ -50,7 +50,6 @@ The Field_4 environment is used throughout the hyperparameter tuning process. So
 * Maximum of average total rewards,
 * High percentage of reaching the target parking place
 
-
 You can run ['hyperparam-tuning.py'][hyper] notebook to tune alpha and gamma values. And you can check which values give the best results.
 
 According to our experiment, the optimal value of alpha is chosen as 0.3, and the optimal value of gamma is chosen as 0.5. And between episodes 150-200 the learning completed and nearly converged. It’s also faster convergence than according to the previous results.
