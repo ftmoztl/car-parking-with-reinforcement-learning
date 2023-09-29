@@ -30,6 +30,7 @@ The actors of the environment are below;
 ➔ Reward: Regular movement rewards with constants and parking rewards with closeness to the target.
 The simulation environments are developed to create this restricted environment with these factors. It is assumed that each resource, each driver, and each destination has a known location associated with it in a 2–dimensional Euclidean space as indicated in this study.
 
+
 ## Reward Policy
 The studied environment is a static environment with its constant. Luckily, the area to move and park can be explained with a cartesian coordinate system, so locations are explained by 2D values. So, the environments are created with the X and Y coordination. So, the following variables are kept constant to tune the environment consciously:
 * Size of the area/cartesian coordinate system: 20
