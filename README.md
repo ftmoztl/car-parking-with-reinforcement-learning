@@ -38,7 +38,7 @@ The studied environment is a static environment with its constant. Luckily, the 
 * Other available and empty parking spaces: [[12, 16], [9, 12], [14, 7], [5, 5]]
 * Road coordination's and directions: x-coordination: [[5,6],[11,12]], y-coordination: [[7, 8], [12, 13]]
 
-<img src='Visuals/Coordinate-System.png' width='500'>
+<img src='Visuals/Coordinate-System.png' width='500'> - It will be added
 
 Action in the environment is designed with a determined road. For example, if the y coordination of the agent is 8, the agent should go in the right direction according to the traffic flow rules. These rules are implemented in the environment with the rewards of the end of the action. If the agent acts against the rules, it will punish. For example, if the agent goes out off the road, the agent will punish with a high minus reward. But the important point is that, if the agent parks the target position, should get the highest reward. According to the reward and punishment rules, the agent will act well. So, the reward policy is really important to direct the agent to the best location. In the experiment phase, lots of rewarding policy is tried to see agent behavior. You can find 7 of them in the [‘environments.py’][env] with explanations. These are used to find the best reward policy.
 
