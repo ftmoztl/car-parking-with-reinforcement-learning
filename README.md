@@ -12,7 +12,6 @@ You can find this problem in this [Operation Research][book]* book, in the Proba
 
 [book]: https://www.academia.edu/48990438/Operational_Research_Winston_Wayne
 [prob]: https://github.com/ftmoztl/car-parking-with-reinforcement-learning/blob/main/Codes/probabilistic-dp.ipynb
-
 # Methods & Algorithms
 In this approach, in the car parking problem, the agent (our actor) would take actions (park or move forward to find a more close parking slot) and receive rewards (e.g., parking done in a short time and closest area to the target) from the user. The nature of this problem is interactive, sequential, and agent-based. Q-learning is more flexible and can handle larger state spaces and unknown transition probabilities. It is suitable when the state space is large or continuous, and the transition probabilities are unknown or difficult to model. 
 * Q-learning is a model-free algorithm, meaning it does not require prior knowledge or explicit knowledge of the environment dynamics. 
@@ -42,7 +41,6 @@ Action in the environment is designed with a determined road. For example, if th
 In this process, it's important to create a field with proper rewards for the agent not get stuck locally (parking areas far from the destination) and reach the target with the minimum steps. Fields 4 and 7 provide this environment. You can run each environment in the py file, and visualize the graph of a number of steps for each episode. We expect that the number of steps should converge after 250-300 episodes, so the agent learns the optimal steps in these episodes. 
 
 [env]: https://github.com/ftmoztl/car-parking-with-reinforcement-learning/blob/main/Codes/environments.py
-
 # Hyperparameter Tuning 
 The Field_4 environment is used throughout the hyperparameter tuning process. So, the focus of this section is tuning the hyperparameters. The alpha and gamma values are tuning to reach high performances. These metrics should be considered;
 * Minimum of average number of steps to reach the target,
@@ -54,17 +52,14 @@ You can run ['hyperparam-tuning.py'][hyper] notebook to tune alpha and gamma val
 According to our experiment, the optimal value of alpha is chosen as 0.3, and the optimal value of gamma is chosen as 0.5. And between episodes 150-200 the learning completed and nearly converged. It gives faster convergence than according to the previous results.
 
 [hyper]: https://github.com/ftmoztl/car-parking-with-reinforcement-learning/blob/main/Codes/hyperparam-tuning.py
-
 # Visualization
 The agent movements are visualized by using the ‘pillow’ package of Python. It’s adapted to the 20x20 field. A function is created to visualize roads, agents, parking lots, and target places. You can find in the ['visualization-traffic.ipynb'][viz] notebook.
 
 [viz]: https://github.com/ftmoztl/car-parking-with-reinforcement-learning/blob/main/Codes/visualization-traffic.ipynb
-
 # Flexible Environment
 For real cases, of course, there will not be a fixed-size field for the agent. To play with the environment, target, and other constants, a flexible environment are designed. In this flexible environment, agents can learn and be tested for the field with high size. And The [‘learning-flexible-env.py’][flex] also includes the random solution to see how Q-learning is working effectively and the random solution is very slow.
 
 [flex]: https://github.com/ftmoztl/car-parking-with-reinforcement-learning/blob/main/Codes/learning-flexible-env.py
-
 # Development Environment
 All development processes are done in a Python environment. The environment Python script and field classes are created to constitute environments for the agent and learning process. And also for visualization of the agent movement, the ‘pillow’ Python package is used.
 
